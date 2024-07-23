@@ -1,0 +1,78 @@
+.container {
+    max-width: 80%; /* Ajustado para una mejor visualización en diferentes dispositivos */
+    margin: 0 auto;
+    padding: 20px; /* Agregado para evitar que el contenido toque los bordes */
+}
+
+h1 {
+    font-size: 2.5rem; /* Uso de unidades relativas para mejor escalabilidad */
+    margin-bottom: 1rem;
+    text-align: center;
+    color: #333; /* Color suavizado para mejorar la legibilidad */
+}
+
+form {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Espaciado entre elementos del formulario */
+}
+
+input[type="text"] {
+    flex-grow: 1; /* Permite que el input ocupe el espacio disponible */
+    padding: 10px;
+    font-size: 1.25rem;
+    border: 2px solid #ccc; /* Borde más destacado */
+    border-radius: 5px;
+    box-shadow: inset 0 0 5px rgba(0,0,0,0.1); /* Sombra interior para profundidad */
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 1.25rem;
+    background-color: #530d81;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Transición más rápida */
+}
+
+button:hover {
+    background-color: #7a4f9d;
+}
+
+.movie-list {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(200px, 1fr)); /* Ajustado para mostrar máximo 4 tarjetas por fila */
+    grid-gap: 2rem; /* Espaciado reducido para más cohesión */
+    padding: 20px; /* Espaciado interno para evitar que el contenido toque los bordes */
+}
+
+.movie-card {
+    background-color: #a30ec9;
+    color: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Sombra más pronunciada para mayor profundidad */
+    transition: transform 0.3s ease; /* Efecto de "levitación" al pasar el mouse */
+}
+
+.movie-card:hover {
+    transform: translateY(-5px); /* Efecto de "levitación" */
+}
+
+.movie-card img {
+    width: 100%;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.movie-card h2 {
+    font-size: 1.5rem; /* Tamaño ajustado para títulos */
+    margin-bottom: 0.5rem;
+}
+
+.movie-card p {
+    font-size: 1rem; /* Tamaño ajustado para texto */
+    margin-bottom: 0.5rem;
+}
